@@ -2,11 +2,11 @@
 # as a demonstration of an API spec in YAML
 swagger: '2.0'
 info:
-  title: 'Photo&Go API'
-  description: 'Photo&Go API allows you to interact directly the merchandising system'
+  title: 'API'
+  description: 'API allows you to interact directly the merchandising system'
   version: "1.0.0"
 # the domain of the service
-host: api.photoandgo.com
+host: api.com
 # array of all schemes that your API supports
 # schemes:
 #   - https

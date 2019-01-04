@@ -94,7 +94,7 @@ server.register([
   {
     register: hapiSwaggeredUi,
     options: {
-      title: 'Photo&Go API Explorer',
+      title: 'API Explorer',
       path: '/explorer',
       swaggerEndpoint: '/swagger',
     },
