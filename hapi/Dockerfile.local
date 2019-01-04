@@ -1,0 +1,15 @@
+FROM nodesource/trusty:6.2.0
+
+RUN npm install -g nodemon
+
+ADD package.json package.json
+
+# disable progress bar to speed up installation https://github.com/npm/npm/issues/11283
+RUN npm set progress=false
+
+# force dev packages installation
+RUN npm config set -g production false
+RUN npm install
+
+EXPOSE 8000
+CMD [ "bash","-c", "npm install && npm start" ]

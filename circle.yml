@@ -1,0 +1,27 @@
+general:
+#  build_dir: v2
+machine:
+  services:
+    - docker
+  environment:
+    NODE_ENV: circleci
+dependencies:
+  # pre:
+    # - sudo pip install docker-compose
+  override:
+    - docker info
+    - ./scripts/setup-flyway.sh
+  post:
+    - docker build --rm=false -t $AWS_ACCOUNT_ID.dkr.ecr.us-east-1.amazonaws.com/focus/api:$CIRCLE_SHA1 ./hapi
+    # --rm=false required to avoid this problem in CircleCI
+    # https://discuss.circleci.com/t/docker-error-removing-intermediate-container/70/25
+test:
+  override:
+    - docker run $AWS_ACCOUNT_ID.dkr.ecr.us-east-1.amazonaws.com/focus/api:$CIRCLE_SHA1 npm run lint
+    # - docker-compose -f docker-compose.test.yml up --build -d --force-recreate
+    # - docker-compose -f docker-compose.test.yml run npm run test
+deployment:
+  dev:
+    branch: master
+    commands:
+      - ./scripts/deploy.sh

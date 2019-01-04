@@ -1,0 +1,14 @@
+{
+  "extends": "airbnb/base",
+  "rules":{
+    "arrow-parens": 2,
+    "no-use-before-define": ["error", { "functions": false }],
+    "max-len": ["error", 130],
+    "new-cap": 0
+  },
+  "globals": {
+    "it": true,
+    "describe": true,
+    "Stripe": true
+   }
+}
