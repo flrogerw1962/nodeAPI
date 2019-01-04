@@ -11,9 +11,6 @@ __work in progress...__
 - https://openapis.org/specification
 - http://jsonapi.org/
 
-### General Standards and Guidelines
-Read https://github.com/photoandgo/dev-docs for details.
-
 ### API Response Standards
 
 The API HTTP responses follow a strict standard.

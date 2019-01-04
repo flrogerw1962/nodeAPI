@@ -5,9 +5,9 @@
   "contributors": [],
   "repository": {
     "type": "git",
-    "url": "git://github.com/photoandgo/apiv2.git"
+    "url": "git://github.com/flrogerw1962/nodeAPI.git"
   },
-  "bugs": "http://github.com/photoandgo/apiv2/issues",
+  "bugs": "http://github.com/flrogerw1962/nodeAPI/issues",
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
   },

@@ -1,5 +1,5 @@
 {
-  "name": "focus-api",
+  "name": "api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,18 +8,18 @@
     "pretest": "npm run use-test-vm && npm run build:test",
     "build:test": "docker-compose -f docker-compose.test.yml up --build -d --force-recreate",
     "clean:test": "docker-compose -f docker-compose.test.yml down --remove-orphans",
-    "create-vm": "docker-machine create --driver virtualbox focus-testing",
-    "use-test-vm": "docker-machine start focus-testing; eval $(docker-machine env focus-testing)"
+    "create-vm": "docker-machine create --driver virtualbox testing",
+    "use-test-vm": "docker-machine start focus-testing; eval $(docker-machine env testing)"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/photoandgo/focus-api.git"
+    "url": "git+https://github.com/flrogerw1962/nodeAPI.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/photoandgo/focus-api/issues"
+    "url": "https://github.com/flrogerw1962/nodeAPI.git/issues"
   },
-  "homepage": "https://github.com/photoandgo/focus-api#readme",
+  "homepage": "https://github.com/flrogerw1962/nodeAPI.git#readme",
   "dependencies": {}
 }
