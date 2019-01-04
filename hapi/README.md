@@ -1,4 +1,4 @@
-# Photo&Go API v2
+# API v2
 
 __work in progress...__
 
@@ -80,14 +80,12 @@ A 403 response simply indicates the logged user doesn't have sufficient permissi
 
 ## Security
 
-note:  node-pg handles sql injection http://bit.ly/2eEmMtl - Gabo
+note:  node-pg handles sql injection http://bit.ly/2eEmMtl
 
 ## Logging
 
 http://hapijs.com/tutorials/logging
 
-## Setup
-Read https://github.com/photoandgo/focus-dev for details.
 
 ## Development Workflow
 
@@ -114,12 +112,7 @@ Eg: `V1.0.1_drop_order_id_from_cart_items.sql`
 more https://flywaydb.org/documentation/migration/sql
 
 
-## Git Workflow ( github flow )
-Read https://github.com/photoandgo/dev-docs/blob/master/CONTRIBUTING.md for details.
-
 ## Deployment
 
 ## Dev Tooling
 
-## Resources
-- [Best Practices for Designing APIs](http://gaboesquivel.com/blog/2015/best-practices-for-designing-web-apis/)
