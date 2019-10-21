@@ -24,7 +24,7 @@
     "hapi-swaggered-ui": "^2.4.0",
     "inert": "^4.0.2",
     "is-my-json-valid": "^2.13.1",
-    "knex": "^0.12.6",
+    "knex": "^0.19.5",
     "lodash": "^4.16.4",
     "pg": "^6.1.0",
     "pg-connection-string": "^0.1.3",
